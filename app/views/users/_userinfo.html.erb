@@ -1,0 +1,23 @@
+<script src="https://kit.fontawesome.com/186f5e30ba.js" crossorigin="anonymous"></script>
+<h1>User info</h1>
+
+<div>
+  <%= image_tag user.get_profile_image(100,100) %>
+<table class="table">
+  <tbody>
+   <tr>
+    <th>name</th>
+    <th><%= user.name %></th>
+   </tr>
+   <tr>
+    <th>introduction</th>
+    <th><%= user.introduction %> </th>
+   </tr>
+ </tbody>
+</table>
+
+　　　<%= link_to edit_user_path(user) do %>
+　　　  <i class="fa-solid fa-user-gear"></i>
+
+  <% end %>
+</div>
